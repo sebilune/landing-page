@@ -14,7 +14,7 @@
 
     span {
         position: absolute;
-        background-color: $primary;
+        background-color: $orange;
         width: 2.5rem;
         height: 2.5rem;
         top: 50%;
@@ -31,7 +31,7 @@
     }
 
     &:hover {
-        background-color: $primary;
+        background-color: $orange;
         color: $white;
 
         span {
