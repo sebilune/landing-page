@@ -1,2 +1,8 @@
-
 @use "custom";
+
+// Import Components
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
