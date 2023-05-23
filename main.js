@@ -7,26 +7,16 @@ const lightbox = GLightbox({
   autoplayVideos: true,
 });
 
-document.getElementById("copyButton").addEventListener("click", function () {
-  // Get the content of the span element
-  var content = document.getElementById("contentToCopy").innerText;
+document.getElementById("copyButton").addEventListener("click", function() {
+    var content = document.getElementById("contentToCopy").innerText;
 
-  // Create a temporary textarea element
-  var textarea = document.createElement("textarea");
-  textarea.value = content;
-
-  // Append the textarea to the body
-  document.body.appendChild(textarea);
-
-  // Select the content of the textarea
-  textarea.select();
-
-  // Copy the selected content to the clipboard
-  document.execCommand("copy");
-
-  // Remove the temporary textarea
-  document.body.removeChild(textarea);
-
-  // Alert the user that the content has been copied
-  alert("Content copied to clipboard: " + content);
-});
+    navigator.clipboard.writeText(content)
+      .then(function() {
+        // Clipboard successfully set
+        alert("Content copied to clipboard: " + content);
+      })
+      .catch(function(error) {
+        // An error occurred
+        alert("Failed to copy content to clipboard: " + error);
+      });
+  });
