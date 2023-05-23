@@ -1,0 +1,9 @@
+@use '../custom' as custom;
+
+img {
+    height: 50px;
+}
+
+.menu {
+    background: linear-gradient(to right, rgba($primary, 0.8), rgba($secondary, 0.8));
+}
