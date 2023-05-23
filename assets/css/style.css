@@ -10721,16 +10721,34 @@ textarea.form-control-lg {
 }
 .btn-rounded {
   position: relative;
-  padding: 0.9375rem 1.25rem;
-  font-weight: 500;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+  font-weight: 600;
   margin: 0;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: #fff;
 }
 .btn-rounded span {
   position: absolute;
   background-color: #FF6D60;
   width: 2.5rem;
   height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded span i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  transform: scaleX(-1);
+}
+.btn-rounded:hover {
+  background: linear-gradient(to right, rgba(255, 109, 96, 0.9), rgba(247, 169, 96, 0.9));
+  color: #fff;
+}
+.btn-rounded:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 img {
