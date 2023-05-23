@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Exolink - Grow YOUR Business Today</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/vendors/css/glightbox.min.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
   </head>
   <body>
     <!-- Navbar -->
@@ -38,7 +40,7 @@
                         <a class="nav-link" href="#">Portfolio</a>
                     </li>
                 </ul>
-                <button type="button" class="rounded-pill btn-rounded">+1 (123) 456 789
+                <button type="button" class="rounded-pill btn-rounded number-button" id="copyButton"><span class="number-text" id="contentToCopy">+1 (123) 456 789</span>
                     <span>
                         <i class="fas fa-phone-alt"></i>
                     </span>
@@ -53,12 +55,12 @@
             <div class="row align-items-center text-white">
                 <div class="col-md-6 intros">
                     <h1 class="display-2">
-                        <span class="intro">Hi there! We are Exo.</span>
+                        <span class="intro">Hi there<span class="orange-text">!</span> We are <span class="orange-text">Exolink.</span> </span>
                         <span class="description lh-base">We are a leading technology company dedicated to providing cutting-edge solutions for businesses across industries.</span>
                     </h1>
-                    <button type="button" class="rounded-pill btn-rounded">Get in touch
+                    <button type="button" class="info-button glightbox rounded-pill btn-rounded">Get to know us!
                         <span>
-                            <i class="fas fa-arrow-left"></i>
+                            <i class="fas fa-arrow-right"></i>
                         </span>
                     </button>
                 </div>
@@ -70,6 +72,11 @@
             </div>
         </div>
     </section>
-    <script src="assets/js/bootstrap.bundle.js"></script>
+
+
+
+    <script src="./assets/vendors/js/glightbox.min.js"> </script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
