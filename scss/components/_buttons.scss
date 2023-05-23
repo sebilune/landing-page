@@ -10,9 +10,11 @@
     font-weight: 600;
     margin: 0;
     border: 0;
+    color: $black;
     background-color: $white;
 
-    span {
+    
+    span:not(.number-text) {
         position: absolute;
         background-color: $orange;
         width: 2.5rem;
@@ -21,24 +23,95 @@
         right: 5px;
         transform: translateY(-50%);
         border-radius: 50%;
-
+        
         i {
             color: $white;
             font-size: 1rem;
             line-height: 2.5rem;
+        }
+        
+        i.fa-phone-alt {
             transform: scaleX(-1);
+        }
+    }
+    
+    &:hover {
+        background-color: $orange;
+        color: $white;
+        
+        span:not(.number-text) {
+            background-color: $white;
+            
+            i {
+                color: $black;
+            }
+        }
+    }
+}
+
+.number-button {
+    padding: 0.9375rem 1.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
+
+    span.number-text {
+        display: none;
+    }
+
+    span:not(.number-text) {
+        right: 5px;
+    }
+
+    transition: all 0.5s ease;
+
+    &:hover {
+        width: auto;
+        height: auto;
+
+        padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+
+        span.number-text {
+            display: inline-block;
+        }
+
+        span:not(.number-text) {
+            right: 5px;
+            outline: none;
+        }
+
+        transition: all 0.5s ease;
+    }
+}
+
+.info-button {
+    color: $white;
+    background-color: $orange;
+    padding: 0.9375rem 1.25rem;
+    
+    transition: all 0.5s ease;
+
+    span {
+        background-color: $white;
+        display: none;
+
+        i {
+            color: $black;
         }
     }
 
     &:hover {
-        background-color: $orange;
-        color: $white;
+        padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+        background-color: $white;
+        color: $black;
 
-        span {
-            background-color: $white;
+        transition: all 0.5s ease;
+
+        span:not(.number-text) {
+            background-color: $orange;
+            display: inline-block;
 
             i {
-                color: $black;
+                color: $white;
             }
         }
     }
