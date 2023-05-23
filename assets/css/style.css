@@ -9,7 +9,7 @@
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #F7D060;
+  --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
@@ -70,7 +70,7 @@
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #FF6D60;
   --bs-link-hover-color: #cc574d;
-  --bs-code-color: #F7D060;
+  --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
 
