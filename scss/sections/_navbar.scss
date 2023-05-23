@@ -1,9 +1,20 @@
-@use '../custom' as custom;
+@use '../custom' as *;
+@use '../components/mixins' as *;
 
 img {
-    height: 50px;
+    height: 3.125rem;
 }
 
 .menu {
-    background: linear-gradient(to right, rgba($primary, 0.8), rgba($secondary, 0.8));
+    @include gradient;
+
+    li {
+        padding: 0 0.7rem;
+
+        a{
+            color: $white !important;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
 }

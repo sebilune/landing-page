@@ -1,0 +1,15 @@
+@use '../custom' as *;
+
+.btn-rounded {
+    position: relative;
+    padding: 0.9375rem 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    border: 0.1rem solid rgba($white, 0.6);
+    span {
+        position: absolute;
+        background-color: $primary;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
