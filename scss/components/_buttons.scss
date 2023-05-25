@@ -40,7 +40,7 @@
             background-color: $white;
             
             i {
-                color: $black;
+                color: $orange;
             }
         }
     }
@@ -126,6 +126,7 @@
     border: solid 0.1rem $orange;
     background-color: $white;
     padding: 0.9375rem 1.25rem;
+    color: $orange;
     
     transition: all 0.5s ease;
 
@@ -140,17 +141,17 @@
 
     &:hover {
         padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
-        background-color: $white;
-        color: $black;
+        background-color: $orange;
+        color: $white;
 
         transition: all 0.5s ease;
 
         span:not(.number-text) {
-            background-color: $orange;
+            background-color: $white;
             display: inline-block;
 
             i {
-                color: $white;
+                color: $orange;
             }
         }
     }
