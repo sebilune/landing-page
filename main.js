@@ -30,7 +30,11 @@ window.addEventListener("resize", () => {
 
   const tempClasses = ["d-flex", "flex-column", "flex-column-reverse"];
   
-  window.innerWidth < 768 ?
-  (marketingClassList.add(...tempClasses), cloudHostingClassList.add(...tempClasses)):
-  (marketingClassList.remove(...tempClasses), cloudHostingClassList.remove(...tempClasses));
+  if(window.innerWidth < 768) {
+    marketingClassList.add(...tempClasses);
+    cloudHostingClassList.add(...tempClasses); 
+  } else {
+    marketingClassList.remove(...tempClasses);
+    cloudHostingClassList.remove(...tempClasses); 
+  }
 });
