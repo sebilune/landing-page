@@ -58,24 +58,6 @@
 
 }
 
-.anim-gradient-blue {
-    background: linear-gradient(to right, $secondary, $light, #2e55a5);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: animation 8s linear infinite;
-    background-size: 400% 100%;
-}
-
-@keyframes animation {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 400%;
-    }
-}
-
 // Border-right
 .border-right {
     border-right: 0.1rem solid $gray-300;
