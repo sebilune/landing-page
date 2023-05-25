@@ -9,7 +9,7 @@ const lightbox = GLightbox({
 
 // Copy to Clipboard Button
 document.getElementById("copyButton").addEventListener("click", function() {
-  var content = document.getElementById("contentToCopy").innerText;
+  let content = document.getElementById("contentToCopy").innerText;
 
   navigator.clipboard.writeText(content)
   .then(function() {
@@ -25,17 +25,18 @@ document.getElementById("copyButton").addEventListener("click", function() {
 
 // Arrange "Services" section accordingly when screen size is less than 768px.
 window.addEventListener("resize", function () {
-  const marketing = document.getElementById("marketing").classList
-  const cloudHosting = document.getElementById("cloud-hosting").classList
+  const marketingClasses = document.getElementById("marketing").classList;
+  const cloudHostingClasses = document.getElementById("cloud-hosting").classList;
 
+  const tempClasses = ["d-flex", "flex-column", "flex-column-reverse"];
   
-  if(window.innerWidth < 768) {   
-    marketing.add("d-flex", "flex-column", "flex-column-reverse");
-    cloudHosting.add("d-flex", "flex-column", "flex-column-reverse"); 
+  if(window.innerWidth < 768) {
+    marketingClasses.add(...tempClasses);
+    cloudHostingClasses.add(...tempClasses); 
   } 
 
-  else{
-    marketing.remove("d-flex", "flex-column", "flex-column-reverse");
-    cloudHosting.remove("d-flex", "flex-column", "flex-column-reverse"); 
+  else {
+    marketingClasses.remove(...tempClasses);
+    cloudHostingClasses.remove(...tempClasses); 
   }
 });
