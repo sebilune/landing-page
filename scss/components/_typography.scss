@@ -1,5 +1,6 @@
 @use '../custom' as *;
 
+// Display-2
 .display-2 {
     margin-bottom: 1rem;
     text-transform: capitalize;
@@ -29,29 +30,50 @@
 }
 
 // Heading line
-.heading-line::before {
-    content: "";
-    margin: 0 auto;
-    width: 10rem;
-    height: 0.1rem;
-    display: block;
-    background-color: $orange;
+.heading-line {
+    &::before {
+        content: "";
+        margin: 0 auto;
+        width: 10rem;
+        height: 0.1rem;
+        display: block;
+        background-color: $orange;
+    }
+
+    &::after {
+        content: "";
+        margin: 0 auto;
+        width: 2rem;
+        height: 0.2rem;
+        padding-top: 0.5rem;
+        display: block;
+        margin-bottom: 1rem;
+        background-color: $orange;
+    }
 }
 
-.heading-line::after {
-    content: "";
-    margin: 0 auto;
-    width: 2rem;
-    height: 0.2rem;
-    padding-top: 0.5rem;
-    display: block;
-    margin-bottom: 1rem;
-    background-color: $orange;
-}
-
-// Display-3
-.fs-3 {
+// fs-3
+.top-txt {
     font-family: 'Poppins', sans-serif;
+
+}
+
+.anim-gradient {
+    background: linear-gradient(to right, $secondary, $light, #2e55a5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animation 8s linear infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes animation {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
 }
 
 // Border-right
