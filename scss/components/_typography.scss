@@ -1,15 +1,17 @@
 @use '../custom' as *;
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 // Display-2
 .display-2 {
     margin-bottom: 1rem;
     text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
 
     .intro {
         display: inline-block;
         font-weight: 700;
-        font-family: 'Poppins', sans-serif;
     }
 
     .description {
@@ -50,12 +52,6 @@
         margin-bottom: 1rem;
         background-color: $orange;
     }
-}
-
-// fs-3
-.top-txt {
-    font-family: 'Poppins', sans-serif;
-
 }
 
 // Border-right
