@@ -81,9 +81,9 @@
 }
 
 .info-button {
-    @include media-breakpoint-down(sm){
-        display: none;
-    }
+    // @include media-breakpoint-down(sm){
+    //     display: none;
+    // }
 
     color: $white;
     background-color: $orange;
