@@ -24,19 +24,19 @@ document.getElementById("copyButton").addEventListener("click", function() {
 
 
 // Arrange "Services" section accordingly when screen size is less than 768px.
-window.addEventListener("resize", function () {
-  const marketingClasses = document.getElementById("marketing").classList;
-  const cloudHostingClasses = document.getElementById("cloud-hosting").classList;
+window.addEventListener("resize", () => {
+  const marketingClassList = document.getElementById("marketing").classList;
+  const cloudHostingClassList = document.getElementById("cloud-hosting").classList;
 
   const tempClasses = ["d-flex", "flex-column", "flex-column-reverse"];
   
   if(window.innerWidth < 768) {
-    marketingClasses.add(...tempClasses);
-    cloudHostingClasses.add(...tempClasses); 
+    marketingClassList.add(...tempClasses);
+    cloudHostingClassList.add(...tempClasses); 
   } 
 
   else {
-    marketingClasses.remove(...tempClasses);
-    cloudHostingClasses.remove(...tempClasses); 
+    marketingClassList.remove(...tempClasses);
+    cloudHostingClassList.remove(...tempClasses); 
   }
 });
