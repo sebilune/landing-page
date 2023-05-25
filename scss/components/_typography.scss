@@ -28,7 +28,7 @@
     color: $orange;
 }
 
-// HEADING LINE
+// Heading line
 .heading-line::before {
     content: "";
     margin: 0 auto;
@@ -47,4 +47,9 @@
     display: block;
     margin-bottom: 1rem;
     background-color: $secondary;
+}
+
+// Display-3
+.display-3 {
+    font-family: 'Poppins', sans-serif;
 }
