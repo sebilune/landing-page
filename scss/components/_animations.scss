@@ -2,7 +2,7 @@
 
 // Gradient Animation
 .anim-gradient-blue {
-    background: linear-gradient(to right, $secondary, $light, #2e55a5);
+    background: linear-gradient(to right, #4b6cb7, #7ba0eb, #2e55a5);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -11,7 +11,7 @@
 }
 
 .anim-gradient-orange {
-    background: linear-gradient(to right, $orange, $orange-500, $orange-300, $orange-500, $orange);
+    background: linear-gradient(to right, $orange, $orange-400, $orange-300, $orange-400, $orange);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
