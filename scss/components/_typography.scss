@@ -5,13 +5,13 @@
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
 
-    span.intro {
+    .intro {
         display: inline-block;
         font-weight: 700;
         font-family: 'Poppins', sans-serif;
     }
 
-    span.description {
+    .description {
         font-size: 1rem;
         display: block;
         margin-top: 1.5rem;
@@ -19,10 +19,32 @@
 
         @include media-breakpoint-up(lg) {
             font-size: 1.25rem;
+            display: inline-block;
         }
     }
 }
 
 .orange-text {
     color: $orange;
+}
+
+// HEADING LINE
+.heading-line::before {
+    content: "";
+    margin: 0 auto;
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    background-color: $secondary;
+}
+
+.heading-line::after {
+    content: "";
+    margin: 0 auto;
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    background-color: $secondary;
 }
