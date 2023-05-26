@@ -12,13 +12,38 @@
         border-radius: 0.625rem;
         height: auto;
         text-align: center;
+
+        i {
+            font-size: 1.5rem;
+            color: rgba($orange, 0.7);
+        }
+
+        .ratings {
+            i {
+                color: rgba($orange, 0.7);
+                font-size: 1rem;
+            }
+        }
     }
 
     &__picture {
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
 
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__name {
+        padding-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: 500;
+        color: $white;
 
+        h3 {
+            padding-top: 0.8rem;
+        }
     }
 }
