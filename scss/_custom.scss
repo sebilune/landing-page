@@ -21,12 +21,15 @@ $gray-900: #212529;
 $black:    #000;
 
 // DEFAULTS
-$primary:       $dark;
+$primary:       $secondary;
 $secondary:     $secondary;
 
 // ACCORDION
 $accordion-icon-color:                    $primary;
 $accordion-icon-active-color:             $primary;
+
+$accordion-padding-y:                     1.5rem;
+$accordion-padding-x:                     1.5rem;
 
 $accordion-icon-width:                    1.6rem;
 
