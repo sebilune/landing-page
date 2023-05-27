@@ -1,6 +1,6 @@
 # Exolink Landing Page
 
-Welcome to the Exolink Landing Page repository! This repository contains the source code and assets for the landing page of Exolink, a fictitious tech company. The landing page showcases my capabilities of various web technologie and incorporates fluid animations, a custom color palette, and animated Illustrations.
+Welcome to the Exolink Landing Page repository! This repository contains the source code and assets for the landing page of Exolink, a fictitious tech company. The landing page showcases my capabilities of various web technologies and incorporates fluid animations, a custom color palette, and animated Illustrations.
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
@@ -23,7 +23,7 @@ The landing page was built using the following technologies:
 
 ## Project Overview
 
-The Exolink Landing Page project is a demonstration my web development techniques and showcases the use of various technologies. Although the landing page is for a fictional company, Exolink, the primary focus of this project is to highlight the implementation of the landing page itself rather than the company.
+The Exolink Landing Page project is a demonstration of my web development techniques and showcases the use of various technologies. Although the landing page is for a fictional company, Exolink, the primary focus of this project is to highlight the implementation of the landing page itself rather than the company.
 
 The landing page features a visually appealing design with fluid animations, a carefully curated color palette, and animated images to create an engaging user experience. It also utilizes the power of AI through ChatGPT,
 for generating descriptive content, and Fliki.ai, an AI model used for generating voice-over videos.
