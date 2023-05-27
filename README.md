@@ -1,4 +1,4 @@
-# Company Landing Page
+# Exolink Landing Page
 
 Welcome to the Exolink Landing Page repository! This repository contains the source code and assets for the landing page of Exolink, a fictitious tech company. The landing page showcases my capabilities of various web technologies and incorporates fluid animations, a custom color palette, and animated Illustrations.
 
