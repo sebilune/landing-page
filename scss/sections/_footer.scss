@@ -2,7 +2,6 @@
 @use '../components/mixins' as *;
 
 .footer {
-    padding-top: 1rem;
     background-color: $footer;
 }
 
@@ -11,12 +10,11 @@
 
     &__icon {
         padding-right: 1rem;
-        width: 3.5rem;
+        width: 3rem;
         stroke: $white;
     }
 
     &__info {
-        padding: 0.4rem;
 
         &--title {
             color: $white;
@@ -28,9 +26,31 @@
         }
 
         &--subtitle {
-            font-size: 1rem;
+            font-size: 0.8rem;
             color: $gray-500;
             text-decoration: none;
         }
     }
 }
+
+// Social media content
+.footer-sm {
+    background-color: #212121;
+
+    &__text {
+        vertical-align: middle;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        i {
+            font-size: 1.25rem;
+            margin-left: 1rem;
+
+            vertical-align: middle;
+        }
+    }
+}
+
