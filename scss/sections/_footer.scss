@@ -1,0 +1,27 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+    padding-top: 1rem;
+    background-color: $footer;
+}
+
+.contact-box {
+    position: relative;
+
+    &__icon {
+        padding-right: 1rem;
+        width: 4rem;
+        stroke: $white;
+    }
+
+    &__info {
+        &--title {
+
+        }
+
+        &--subtitle {
+
+        }
+    }
+}
