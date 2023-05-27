@@ -11,17 +11,26 @@
 
     &__icon {
         padding-right: 1rem;
-        width: 4rem;
+        width: 3.5rem;
         stroke: $white;
     }
 
     &__info {
-        &--title {
+        padding: 0.4rem;
 
+        &--title {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                color: $orange;
+            }
         }
 
         &--subtitle {
-
+            font-size: 1rem;
+            color: $gray-500;
+            text-decoration: none;
         }
     }
 }
