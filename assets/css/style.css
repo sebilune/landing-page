@@ -11099,4 +11099,45 @@ img {
   padding: 3rem;
 }
 
+.footer {
+  background-color: #151414;
+}
+
+.contact-box {
+  position: relative;
+}
+.contact-box__icon {
+  padding-right: 1rem;
+  width: 3rem;
+  stroke: #fff;
+}
+.contact-box__info--title {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-box__info--title:hover {
+  color: #fd7e14;
+}
+.contact-box__info--subtitle {
+  font-size: 0.8rem;
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.footer-sm {
+  background-color: #212121;
+}
+.footer-sm__text {
+  vertical-align: middle;
+}
+.footer-sm a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-sm a i {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
 /*# sourceMappingURL=style.css.map */
