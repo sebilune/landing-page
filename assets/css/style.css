@@ -10922,6 +10922,10 @@ textarea.form-control-lg {
   height: 100%;
 }
 
+.gradient {
+  background: linear-gradient(to left, #4b6cb7 0%, #182848 100%);
+}
+
 img {
   height: 3.125rem;
   padding: 0.25rem 0.75rem;
@@ -11065,6 +11069,27 @@ img {
   visibility: visible;
   cursor: pointer;
   transition: opacity 0.3s ease;
+}
+
+.get-started {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.cta-info__list {
+  position: relative;
+  list-style-type: none;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.cta-info li i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
